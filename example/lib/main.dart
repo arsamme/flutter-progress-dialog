@@ -1,4 +1,4 @@
-import 'package:ars_progress_dialog/dialog.dart';
+import 'package:ars_progress_dialog/ars_progress_dialog.dart';
 import 'package:flutter/material.dart';
 
 void main() {
