@@ -2,7 +2,7 @@
   Nice customizable progress dialog package for Flutter projects.
 
 ### Example
-![example gif](example/doc/example.gif)
+![example gif](https://raw.githubusercontent.com/arsamme/flutter-progress-dialog/main/example/doc/example.gif =300x)
 
 ## Getting Started    
  ### Install  
