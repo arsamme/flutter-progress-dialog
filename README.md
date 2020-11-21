@@ -1,14 +1,34 @@
-# progress_dialog
+# Progress Dialog Flutter Package    
+ Nice customizable progress dialog for Flutter projects.    
+    
+## Getting Started    
+ ### Install  
+Add dependency to pubspec.yaml file :  
+`ars_progress_dialog: 0.0.1`  
+  
+### Import  
+Import class in your project :  
+`import 'package:ars_progress_dialog/dialog.dart';`  
+  
+## Showing Dialog  
+### Show simple progress dialog :  
 
-A new Flutter package.
-
-## Getting Started
-
-This project is a starting point for a Dart
-[package](https://flutter.dev/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
-
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+```  
+ArsProgressDialog progressDialog = ArsProgressDialog(  
+ context, blur: 2, backgroundColor: Color(0x33000000),    animationDuration: Duration(milliseconds: 500));  
+     progressDialog.show(); // show dialog  
+ progressDialog.dismiss(); //close dialog
+``` 
+  
+### Customize loading widget :  
+  
+```  
+ ArsProgressDialog progressDialog = ArsProgressDialog(context,    blur: 2,    
+    backgroundColor: Color(0x33000000),    
+    loadingWidget: Container(    
+      width: 150,    
+      height: 150,    
+      color: Colors.red,    
+      child: CircularProgressIndicator(),    
+    ));  
+```
