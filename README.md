@@ -2,7 +2,7 @@
   Nice customizable progress dialog package for Flutter projects.
 
 ### Example
-![example gif](example/doc/example.mp4)
+![example gif](example/doc/example.gif)
 
 ## Getting Started    
  ### Install  
