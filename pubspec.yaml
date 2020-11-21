@@ -1,7 +1,7 @@
 name: ars_progress_dialog
 description: Flutter Progress Dialog Package
 version: 0.0.1
-homepage:https://
+homepage: https://github.com/arsamme/flutter-progress-dialog
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
