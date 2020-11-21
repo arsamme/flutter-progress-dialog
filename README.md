@@ -30,12 +30,14 @@ ArsProgressDialog progressDialog = ArsProgressDialog(
 ### Customize loading widget :  
   
 ```  
- ArsProgressDialog progressDialog = ArsProgressDialog(context,    blur: 2,    
-    backgroundColor: Color(0x33000000),    
-    loadingWidget: Container(    
-      width: 150,    
-      height: 150,    
-      color: Colors.red,    
-      child: CircularProgressIndicator(),    
+ ArsProgressDialog progressDialog = ArsProgressDialog(
+	 context,
+	 blur: 2,
+	 backgroundColor: Color(0x33000000),
+	 loadingWidget: Container(
+		 width: 150,
+		 height: 150,
+		 color: Colors.red,
+		 child: CircularProgressIndicator(),    
     ));  
 ```
