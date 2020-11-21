@@ -7,7 +7,7 @@
 ## Getting Started    
  ### Install  
 Add dependency to pubspec.yaml file :  
-`ars_progress_dialog: 0.0.1`  
+`ars_progress_dialog: VERSION`  
   
 ### Import  
 Import class in your project :  
