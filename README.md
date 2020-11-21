@@ -17,10 +17,14 @@ Import class in your project :
 ### Show simple progress dialog :  
 
 ```  
-ArsProgressDialog progressDialog = ArsProgressDialog(  
- context, blur: 2, backgroundColor: Color(0x33000000),    animationDuration: Duration(milliseconds: 500));  
-     progressDialog.show(); // show dialog  
- progressDialog.dismiss(); //close dialog
+ArsProgressDialog progressDialog = ArsProgressDialog(
+	context,
+	blur: 2,
+	backgroundColor: Color(0x33000000),
+	animationDuration: Duration(milliseconds: 500));
+	
+	progressDialog.show(); // show dialog
+	progressDialog.dismiss(); //close dialog
 ``` 
   
 ### Customize loading widget :  
