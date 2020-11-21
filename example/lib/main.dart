@@ -1,4 +1,4 @@
-import 'package:ars_progress_dialog/custom_progress_dialog.dart';
+import 'package:ars_progress_dialog/dialog.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -24,25 +24,45 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  CustomProgressDialog _customProgressDialog;
+  ArsProgressDialog _customProgressDialog;
 
   @override
   Widget build(BuildContext context) {
-    _customProgressDialog = CustomProgressDialog(context, blur: 2);
+    _customProgressDialog = ArsProgressDialog(context,
+        blur: 2,
+        backgroundColor: Color(0x33000000),
+        animationDuration: Duration(milliseconds: 500));
+
+    ArsProgressDialog progressDialog = ArsProgressDialog(context,
+        blur: 2,
+        backgroundColor: Color(0x33000000),
+        loadingWidget: Container(
+          width: 150,
+          height: 150,
+          color: Colors.red,
+          child: CircularProgressIndicator(),
+        ));
 
     return Scaffold(
         body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              MaterialButton(
-                onPressed: () {
-                  _customProgressDialog.show();
-                },
-                child: Text("show dialog"),
-              ),
-            ],
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[
+          Container(
+            height: 200,
+            child: Text(
+              'Example of progress dialog',
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22),
+            ),
           ),
-        ));
+          MaterialButton(
+            onPressed: () {
+              _customProgressDialog.show();
+            },
+            child: Text("show dialog"),
+          ),
+        ],
+      ),
+    ));
   }
 }
