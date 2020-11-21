@@ -1,6 +1,9 @@
-# Progress Dialog Flutter Package    
- Nice customizable progress dialog for Flutter projects.    
-    
+# ars_progress_dialog  
+  Nice customizable progress dialog package for Flutter projects.
+
+### Example
+![example gif](example/doc/example.mp4)
+
 ## Getting Started    
  ### Install  
 Add dependency to pubspec.yaml file :  
