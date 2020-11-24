@@ -2,39 +2,39 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 
-// Ars Progress Dialog
+/// Ars Progress Dialog
 class ArsProgressDialog {
-  // BuildContext to show dialog in
+  /// BuildContext to show dialog in
   final BuildContext context;
 
-  // Main widget of dialog,
+  /// Main widget of dialog,
   final Widget loadingWidget;
 
-  // Whether dialog can dismiss by touching outside or not
+  /// Whether dialog can dismiss by touching outside or not
   final bool dismissable;
 
-  // This function will trigger when user dismisses dialog
+  /// This function will trigger when user dismisses dialog
   final Function onDismiss;
 
-  // Amount of background blur
+  /// Amount of background blur
   final double blur;
 
-  // Dialog's background color
+  /// Dialog's background color
   final Color backgroundColor;
 
-  // Using safe area, dialog will keep padding from status bar, navigation bar and ...
+  /// Using safe area, dialog will keep padding from status bar, navigation bar and ...
   final bool useSafeArea;
 
-  // Duration of blur and background color animation
+  /// Duration of blur and background color animation
   final Duration animationDuration;
 
-  // Is dialog showing or not
+  /// Is dialog showing or not
   bool _isShowing = false;
 
-  // Dialog widget instance
+  /// Dialog widget instance
   _ArsProgressDialogWidget _progressDialogWidget;
 
-  // Getter for _isShowing
+  /// Getter for _isShowing
   bool get isShowing => _isShowing;
 
   ArsProgressDialog(
@@ -50,7 +50,7 @@ class ArsProgressDialog {
     _initProgress();
   }
 
-  // Initialize dialog's instance
+  /// Initialize dialog's instance
   void _initProgress() {
     _progressDialogWidget = _ArsProgressDialogWidget(
       blur: blur,
@@ -62,7 +62,7 @@ class ArsProgressDialog {
     );
   }
 
-  // Show progress dialog
+  /// Show progress dialog
   void show() async {
     if (!_isShowing) {
       _isShowing = true;
@@ -78,7 +78,7 @@ class ArsProgressDialog {
     }
   }
 
-  // Dismiss progress dialog
+  /// Dismiss progress dialog
   void dismiss() {
     if (_isShowing) {
       _isShowing = false;
@@ -89,22 +89,22 @@ class ArsProgressDialog {
 
 // ignore: must_be_immutable
 class _ArsProgressDialogWidget extends StatelessWidget {
-  // Main widget of dialog,
+  /// Main widget of dialog,
   Widget loadingWidget;
 
-  // This function will trigger when user dismisses dialog
+  /// This function will trigger when user dismisses dialog
   final Function onDismiss;
 
-  // Amount of background blur
+  /// Amount of background blur
   final double blur;
 
-  // Dialog's background color
+  /// Dialog's background color
   final Color backgroundColor;
 
-  // Whether dialog can dismiss by touching outside or not
+  /// Whether dialog can dismiss by touching outside or not
   final bool dismissable;
 
-  // Duration of blur and background color animation
+  /// Duration of blur and background color animation
   final Duration animationDuration;
 
   _ArsProgressDialogWidget({
@@ -152,26 +152,26 @@ class _ArsProgressDialogWidget extends StatelessWidget {
 
 // ignore: must_be_immutable
 class _DialogBackground extends StatelessWidget {
-  // Widget of dialog, you can use NDialog, Dialog, AlertDialog or Custom your own Dialog
+  /// Widget of dialog, you can use NDialog, Dialog, AlertDialog or Custom your own Dialog
   final Widget dialog;
 
-  // Because blur dialog cover the barrier, you have to declare here
+  /// Because blur dialog cover the barrier, you have to declare here
   final bool dismissable;
 
-  // Action before dialog dismissed
+  /// Action before dialog dismissed
   final Function onDismiss;
 
-  // Creates an background filter that applies a Gaussian blur.
-  // Default = 0
+  /// Creates an background filter that applies a Gaussian blur.
+  /// Default = 0
   final double blur;
 
-  // Background color
+  /// Background color
   final Color color;
 
-  // Animation Duration
+  /// Animation Duration
   final Duration animationDuration;
 
-  // Color Opacity
+  /// Color Opacity
   double _colorOpacity;
 
   _DialogBackground(
