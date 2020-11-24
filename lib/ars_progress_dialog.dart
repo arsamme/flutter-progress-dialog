@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 class ArsProgressDialog {
   final BuildContext context;
   final Widget loadingWidget;
-  final Function onCancel;
   final bool dismissable;
   final Function onDismiss;
   final double blur;
@@ -22,7 +21,6 @@ class ArsProgressDialog {
     this.context, {
     this.backgroundColor: const Color(0x99000000),
     this.blur: 0,
-    this.onCancel,
     this.dismissable: true,
     this.onDismiss,
     this.loadingWidget,
@@ -71,7 +69,6 @@ class ArsProgressDialog {
 
 // ignore: must_be_immutable
 class _ArsProgressDialogWidget extends StatelessWidget {
-  final Function onCancel;
   Widget loadingWidget;
   final Function onDismiss;
   final double blur;
@@ -81,7 +78,6 @@ class _ArsProgressDialogWidget extends StatelessWidget {
 
   _ArsProgressDialogWidget({
     Key key,
-    this.onCancel,
     this.dismissable,
     this.onDismiss,
     this.backgroundColor,
