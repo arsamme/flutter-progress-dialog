@@ -99,7 +99,6 @@ class _ArsProgressDialogWidget extends StatelessWidget {
   final Duration animationDuration;
 
   _ArsProgressDialogWidget({
-    Key key,
     this.dismissable,
     this.onDismiss,
     this.backgroundColor,
