@@ -20,14 +20,14 @@ class ArsProgressDialog {
 
   ArsProgressDialog(
     this.context, {
-    this.backgroundColor,
+    this.backgroundColor: const Color(0x99000000),
     this.blur: 0,
     this.onCancel,
-    this.dismissable,
+    this.dismissable: true,
     this.onDismiss,
     this.loadingWidget,
     this.useSafeArea: false,
-    this.animationDuration = const Duration(milliseconds: 300),
+    this.animationDuration: const Duration(milliseconds: 300),
   }) {
     _initProgress();
   }
@@ -154,7 +154,7 @@ class _DialogBackground extends StatelessWidget {
       this.blur,
       this.onDismiss,
       this.animationDuration: const Duration(milliseconds: 300),
-      this.color: const Color(0x99000000)}) {
+      this.color}) {
     _colorOpacity = color.opacity;
   }
 
