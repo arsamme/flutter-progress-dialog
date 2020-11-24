@@ -6,9 +6,9 @@ Customizable progress dialog for Flutter applications with smooth animation for 
 
 ## Getting Started    
  ### Install  
-Add dependency to pubspec.yaml file :  
-`ars_progress_dialog: 0.0.1`  
-Run this command :
+Add dependency to pubspec.yaml file :   
+`ars_progress_dialog: 0.0.1`    
+Run this command :  
 `$ flutter packages get`
   
 ### Import  
