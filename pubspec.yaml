@@ -1,6 +1,6 @@
 name: ars_progress_dialog
 description: Customizable progress dialog for Flutter applications with smooth animation for background dim color and blur.
-version: 0.1.0
+version: 0.1.1
 homepage: https://github.com/arsamme/flutter-progress-dialog
 
 environment:

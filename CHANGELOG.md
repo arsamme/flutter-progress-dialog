@@ -1,3 +1,7 @@
+## [0.1.1]
+
+- Added comments
+
 ## [0.1.0]
 
 - Add properties in README
