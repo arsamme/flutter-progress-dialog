@@ -33,7 +33,6 @@ class ArsProgressDialog {
   void _initProgress() {
     _progressDialogWidget = _ArsProgressDialogWidget(
       blur: blur,
-      onCancel: onCancel,
       dismissable: dismissable,
       backgroundColor: backgroundColor,
       onDismiss: onDismiss,
