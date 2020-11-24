@@ -2,19 +2,40 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 
+// Ars Progress Dialog
 class ArsProgressDialog {
+  // BuildContext to show dialog in
   final BuildContext context;
+
+  // Main widget of dialog,
   final Widget loadingWidget;
+
+  // Whether dialog can dismiss by touching outside or not
   final bool dismissable;
+
+  // This function will trigger when user dismisses dialog
   final Function onDismiss;
+
+  // Amount of background blur
   final double blur;
+
+  // Dialog's background color
   final Color backgroundColor;
+
+  // Using safe area, dialog will keep padding from status bar, navigation bar and ...
   final bool useSafeArea;
+
+  // Duration of blur and background color animation
   final Duration animationDuration;
 
+  // Is dialog showing or not
   bool _isShowing = false;
+
+  // Dialog widget instance
   _ArsProgressDialogWidget _progressDialogWidget;
 
+
+  // Getter for _isShowing
   bool get isShowing => _isShowing;
 
   ArsProgressDialog(
@@ -30,6 +51,8 @@ class ArsProgressDialog {
     _initProgress();
   }
 
+
+  // Initialize dialog's instance
   void _initProgress() {
     _progressDialogWidget = _ArsProgressDialogWidget(
       blur: blur,
