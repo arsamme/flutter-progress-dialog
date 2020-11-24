@@ -10,7 +10,7 @@ Add dependency to pubspec.yaml file :
 `ars_progress_dialog: 0.0.1`    
 
 Run this command :  
-`$ flutter packages get`
+`$ flutter pub get`
   
 ### Import  
 Import class in your project :  
