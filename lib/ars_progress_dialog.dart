@@ -34,7 +34,6 @@ class ArsProgressDialog {
   // Dialog widget instance
   _ArsProgressDialogWidget _progressDialogWidget;
 
-
   // Getter for _isShowing
   bool get isShowing => _isShowing;
 
@@ -50,7 +49,6 @@ class ArsProgressDialog {
   }) {
     _initProgress();
   }
-
 
   // Initialize dialog's instance
   void _initProgress() {
@@ -91,11 +89,22 @@ class ArsProgressDialog {
 
 // ignore: must_be_immutable
 class _ArsProgressDialogWidget extends StatelessWidget {
+  // Main widget of dialog,
   Widget loadingWidget;
+
+  // This function will trigger when user dismisses dialog
   final Function onDismiss;
+
+  // Amount of background blur
   final double blur;
+
+  // Dialog's background color
   final Color backgroundColor;
+
+  // Whether dialog can dismiss by touching outside or not
   final bool dismissable;
+
+  // Duration of blur and background color animation
   final Duration animationDuration;
 
   _ArsProgressDialogWidget({
