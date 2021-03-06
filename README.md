@@ -1,3 +1,6 @@
+# DISCONTINUED
+Checkout [ArsDialog](https://pub.dev/packages/ars_dialog)
+
 # ars_progress_dialog  
 Customizable progress dialog for Flutter applications with smooth animation for background dim color and blur.
 
